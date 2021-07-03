@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\CardsController;
+use App\Http\Controllers\admin\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,5 @@ use App\Http\Controllers\admin\CardsController;
 */
 
 Route::get('/', [CardsController::class, 'cards']);
+
+Route::get('/register', [RegisterController::class, 'register']);
