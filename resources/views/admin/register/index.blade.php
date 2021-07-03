@@ -38,8 +38,8 @@
                 <input type="number" id="discord" name="discord" placeholder="Your user ID on Discord">
             </div>
             <div class="form-buttons">
-                <a class="form-button" href="/">Cancelar</a>
-                <button class="form-button">Salvar</button>
+                <a class="form-button" href="/">Cancel</a>
+                <button class="form-button">Save</button>
             </div>
         </form>
     </section>
