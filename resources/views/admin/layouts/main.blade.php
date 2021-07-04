@@ -12,7 +12,7 @@
 
     <header>
         <h1>Share your ideas!</h1>
-        <a class="header-button" href="/register">+ Add</a>
+        <a class="header-button" href="{{route('register')}}">+ Add</a>
     </header>
     <main class="container-cards">
         @yield('main-content')

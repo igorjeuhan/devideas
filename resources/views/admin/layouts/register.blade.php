@@ -13,7 +13,7 @@
 
     <header>
         <h1>Register your idea</h1>
-        <a class="header-button" href="/">Voltar</a>
+        <a class="header-button" href="{{route('cards')}}">Voltar</a>
     </header>
     <main class="register">
         @yield('register-content')

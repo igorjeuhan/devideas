@@ -10,4 +10,8 @@ class RegisterController extends Controller
     public function register() {
         return view('admin.register.index');
     }
+
+    public function save() {
+
+    }
 }

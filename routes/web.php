@@ -14,7 +14,8 @@ use App\Http\Controllers\admin\RegisterController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::redirect('/', '/admin/cards');
 
-Route::get('/', [CardsController::class, 'cards']);
-
-Route::get('/register', [RegisterController::class, 'register']);
+Route::get('admin/cards', [CardsController::class, 'cards'])->name('cards');
+Route::get('admin/register', [RegisterController::class, 'register'])->name('register');
+Route::post('admin/register', [RegisterController::class, 'save'])->name('save');

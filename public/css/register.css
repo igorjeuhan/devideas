@@ -53,12 +53,18 @@
     background: var(--green);
     color: var(--white);
     cursor: pointer;
+    transition: .3s ease;
+}
+
+.form-buttons > button:hover {
+    background: var(--dark-green);
 }
 
 .form-buttons > a {
     border: 2px solid var(--red);
     opacity: .6;
     color: var(--red);
+    transition: .3s ease;
 }
 
 .form-buttons > a:hover {
