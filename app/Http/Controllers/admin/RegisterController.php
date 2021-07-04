@@ -16,6 +16,14 @@ class RegisterController extends Controller
     public function save(Request $request) {
 
         //Validar esses dados
+        $request->validate([
+            'title' => 'bail|required|min:5|max:16',
+            'author' => 'bail|required|min:5|max:24',
+            'description' => 'bail|required|min:10|max:58',
+            'example' => 'bail|max:50',
+            'github' => 'bail|max:50',
+            'discord' => 'bail|max:4'
+        ]);
 
         //Criar um objeto do modelo (classe) Idea
         Idea::create($request->all());

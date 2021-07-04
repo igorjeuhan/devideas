@@ -10,15 +10,15 @@
 
             <div class="input-group">
                 <label for="title"></label>
-                <input type="text" id="title" name="title" placeholder="Title of idea" maxlength="16">
+                <input type="text" id="title" name="title" placeholder="Title of idea" minlength="5" maxlength="16" required>
             </div>
             <div class="input-group">
                 <label for="author"></label>
-                <input type="text" id="author" name="author" placeholder="Author" maxlength="24">
+                <input type="text" id="author" name="author" placeholder="Author" minlength="5" maxlength="24" required>
             </div>
             <div class="input-group">
                 <label for="description"></label>
-                <input type="text" id="description" name="description" placeholder="Description" maxlength="58">
+                <input type="text" id="description" name="description" placeholder="Description" minlength="10" maxlength="58">
             </div>
             <div class="input-group">
                 <label for="level"></label>
