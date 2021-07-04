@@ -4,6 +4,7 @@
 
     <section class="form">
         <h2>Register a new idea</h2>
+        <small class="legend">Easy = Level 1 - Medium = Level 2 - Hard = Level 3</small>
         <form action="{{route('save')}}" method="POST">
 
             @csrf

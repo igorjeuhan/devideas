@@ -66,8 +66,12 @@ header > h1 {
 .container-cards {
     display: block;
     margin: auto;
-    text-align: center;
     padding: 2rem;
+}
+
+.toast-content {
+    width: 100%;
+    text-align: center;
 }
 
 small.toast {

@@ -3,9 +3,11 @@
 @section('main-content')
 
     @if (session('success'))
+    <div class="toast-content">
         <small class="toast">
             {{session('success')}}
         </small>
+    </div>
     @endif
 
 <section class="cards">
