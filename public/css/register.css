@@ -32,6 +32,12 @@
     border-radius: 4px;
 }
 
+.input-group > small {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 .form-buttons {
     display: flex;
     align-items: center;

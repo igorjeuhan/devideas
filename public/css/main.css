@@ -66,6 +66,19 @@ header > h1 {
 .container-cards {
     display: block;
     margin: auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+small.toast {
+    padding: .6rem;
+    background: var(--dark-green);
+    color: var(--white);
+    font-size: 1rem;
+    border-radius: 4px;
+    transform: translateY(-10px);
+    opacity: 0;
+    animation: slide 3s forwards;
 }
 
 .header-card, .description, .body-card, .footer-card {
@@ -96,7 +109,7 @@ header > h1 {
 .cards {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 1rem;
 }
@@ -106,6 +119,7 @@ header > h1 {
     padding: 2.4rem;
     margin: 8px;
     width: 300px;
+    max-height: 366px;
     transform: translateY(-10px);
     opacity: 0;
     animation: slide 0.3s forwards;
@@ -133,6 +147,7 @@ header > h1 {
 .description .text {
     font-size: 1.2rem;
     line-height: 1.5;
+    word-wrap: break-word;
 }
 
 .body-card {

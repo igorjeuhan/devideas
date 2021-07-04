@@ -10,15 +10,15 @@
 
             <div class="input-group">
                 <label for="title"></label>
-                <input type="text" id="title" name="title" placeholder="Title of idea">
+                <input type="text" id="title" name="title" placeholder="Title of idea" maxlength="16">
             </div>
             <div class="input-group">
                 <label for="author"></label>
-                <input type="text" id="author" name="author" placeholder="Author">
+                <input type="text" id="author" name="author" placeholder="Author" maxlength="24">
             </div>
             <div class="input-group">
                 <label for="description"></label>
-                <input type="text" id="description" name="description" placeholder="Description">
+                <input type="text" id="description" name="description" placeholder="Description" maxlength="58">
             </div>
             <div class="input-group">
                 <label for="level"></label>
@@ -30,15 +30,16 @@
             </div>
             <div class="input-group">
                 <label for="example"></label>
-                <input type="url" id="example" name="example" placeholder="Link of code example">
+                <input type="url" id="example" name="example" placeholder="Link of code example" maxlength="50">
             </div>
             <div class="input-group">
                 <label for="github"></label>
-                <input type="url" id="github" name="github" placeholder="Link of your Github">
+                <input type="url" id="github" name="github" placeholder="Link of your Github" maxlength="50">
             </div>
             <div class="input-group">
                 <label for="discord"></label>
-                <input type="number" id="discord" name="discord" placeholder="Your user ID on Discord">
+                <input type="text" id="discord" name="discord" placeholder="Your user ID on Discord" maxlength="4">
+                <small>Only numbers!</small>
             </div>
             <div class="form-buttons">
                 <a class="form-button" href="{{route('cards')}}">Cancel</a>

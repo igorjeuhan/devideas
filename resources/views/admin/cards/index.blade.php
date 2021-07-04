@@ -2,7 +2,15 @@
 
 @section('main-content')
 
+    @if (session('success'))
+        <small class="toast">
+            {{session('success')}}
+        </small>
+    @endif
+
 <section class="cards">
+
+
 
 @forelse ($ideas as $idea)
     <section class="card">
@@ -37,7 +45,6 @@
     <h1>No ideas found...</h1>
 
 @endforelse
-
 
 </section>
 

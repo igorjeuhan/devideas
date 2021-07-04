@@ -15,12 +15,12 @@ class CreateIdeasTable extends Migration
     {
         Schema::create('ideas', function (Blueprint $table) {
             $table->id(); // Campo chave primária
-            $table->string('title', 25);
-            $table->char('author', 25);
-            $table->mediumText('description');
+            $table->string('title', 16);
+            $table->char('author', 24);
+            $table->string('description', 58);
             $table->char('level', 2);
-            $table->string('example');
-            $table->string('github');
+            $table->string('example', 50);
+            $table->string('github', 50);
             $table->integer('discord');
             $table->timestamps(); //opcional e gerenciado pelo laravel
         });
